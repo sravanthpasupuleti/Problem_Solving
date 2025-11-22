@@ -5,7 +5,7 @@ public class ReverseEachWord{
         int length = name.length() - 1;
        
         for(int i=0; i<=length; i++){
-            if(name.charAt(i) == ' ' || name.charAt(i) == length){
+            if(name.charAt(i) == ' ' || i == length){
                 for(int j = i; j>=0; j--){
                     if(name.charAt(j) == ' '){
                         continue;
@@ -13,7 +13,7 @@ public class ReverseEachWord{
                         reversed = reversed + name.charAt(j);
                     }
                 }
-                // reversed = reversed + " ";
+                reversed = reversed + " ";
             }
            
         }
