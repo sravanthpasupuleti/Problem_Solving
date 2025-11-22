@@ -1,4 +1,3 @@
-
 public class Reverse {
     public static void main(String[] args){
         int[] ar = {1,2,3,4,5};
@@ -7,6 +6,6 @@ public class Reverse {
             System.out.print(ar[i] + " ");
             ar[i] = rev[i];
         }
-        System.out.println(ar);
+        // System.out.println(ar);  //it prints addres of array
     }
 }
